@@ -1,0 +1,95 @@
+.wrapper{
+  margin: 0 auto;
+  display: flex;
+  height: 45vh;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    .right
+    {
+    background: #fff;
+    height: 100%;
+    /*width: 60%;*/
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+    z-index: 12;
+        .logo
+        {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 18px;
+        }
+        .stars
+        {
+        font-size: 18px;
+        color: #1779ba;
+        margin-top: 20px;
+      }
+      .about p{
+        margin-top:20px;
+        color: #8d8d8d;
+        font-size: 17px;
+        margin:20px;
+      }
+      .media-icons
+      {
+      margin-top:50px;
+      margin-bottom: 50px;
+      position: relative;
+      color: #1779ba;
+      }
+      .buttone{
+        display: flex;
+        justify-content: space-around;
+        margin:0 auto;
+        margin-bottom: 10px;
+      }
+      .buttone button
+      {
+        background: #1779ba;
+        outline: none;
+        border: none;
+        color: #fff;
+        padding: 15px 22px;
+        border-radius: 7px;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+    }
+    .buttone button:hover
+    {
+        background: #14679b;
+    }
+    .left
+    {
+      background: url('../img/2aa.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 450px;
+
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      ul{
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        padding: 10px 26px;
+        margin-left: -547px;
+        transition: 0.4s;
+        li{
+            font-size: 15px;
+            color: #fff;
+          }
+      }
+      &:hover ul{
+      margin-left: 0px;}
+    }
+}

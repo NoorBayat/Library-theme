@@ -1,0 +1,148 @@
+.artgallary{
+    position: relative;
+    min-height: 100vh;
+    width:100%;
+
+    .lightBox{
+        position:fixed;
+        top:0 ;
+        left:0;
+        height:100%;
+        width: 100%;
+        background:rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        display:none;
+          .showImg {
+           height:100%;
+           width:100%;
+
+        }
+       .lightBox_content{
+          position:fixed;
+          left:50%;
+          top:50%;
+          transform:translate(-50% , -50%);
+          max-width: 950px;
+          /*width: 100%;*/
+          background:#fff;
+          border-radius: 12px;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          padding:15px;
+
+          .close{
+          position: absolute;
+          top: 0;
+          left:-40px;
+          font-size: 30px;
+          color:#fff;
+          cursor: pointer;
+        }
+      }
+        .showImg .images{
+          max-width: 900px;
+          width: 100%;
+          max-height: 700px;
+          img{
+          width: 100%;
+          height: 85%;
+          object-fit: cover;
+        }
+      }
+    }
+  .logo_icons{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      a{
+        display:flex;
+        align-items: center;
+      }
+      .logoimg{
+      height:40px;
+      width:40px;
+      border-radius:50%;
+      }
+      .text_content{
+        display:flex;
+        flex-direction: column;
+        margin-left: 10px;
+        color:#737373;
+        font-size: 16px;
+        font-weight: 500;
+          .followers{
+          font-size: 12px;
+          margin-top:-5px;
+          }
+      }
+        .icons2 i {
+        height:35px;
+        width: 35px;
+        background:#ccc;
+        text-align: center;
+        line-height: 35px;
+        font-size: 16px;
+        color:#fff;
+        border-radius: 4px;
+        margin:0 3px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover{
+            background:#009961;
+          }
+        }
+    }
+ .image-gallary{
+      max-width: 1400px;
+      width:100%;
+      background:#f8fafc;
+      margin:auto;
+      header{
+        color:floralwhite;
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+        background:#1779ba;
+        padding:20px 0 ;
+        letter-spacing:1px;
+    }
+    .image_container{
+      margin-top:20px;
+      columns:3;
+        .image_box{
+        position: relative;
+        cursor: pointer;
+      }
+    }
+      .image_box .logo_icons{
+      position: absolute;
+      bottom:5px;
+      left:0;
+      width:100%;
+      padding:10px 15px;
+      background:rgba(0, 0, 0, 0.1);
+      box-shadow:0 -5px 10px rgba(0, 0, 0, 0.1);
+      opacity:0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+    .image_box:hover .logo_icons{
+      opacity:1;
+      pointer-events: auto;
+    }
+          &:hover .logo_icons{
+          opacity:1;
+          pointer-events: auto;
+        }
+        .logo_icons .icons2 {
+        color:#b4b4b4;
+        .icons2:hover {
+        color:#707070;
+      }
+      }
+
+  }
+}
+.artgallary .logo_icons .text_content {
+  color:#1779ba;
+}

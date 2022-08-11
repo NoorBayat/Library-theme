@@ -1,0 +1,75 @@
+.card{
+  border:0px !important;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2) !important;
+  border-radius:7px !important;
+}
+.card-product-hover-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+.card-product-hover {
+  position: relative;
+  line-height: 1.2rem;
+  transition: all 0.35s ease;
+  .card-product-hover-details {
+    flex: 1 0 auto;
+    padding: 1rem;
+  }
+}
+.card-product-hover-details > :last-child {
+  margin-bottom: 0;
+}
+.card-product-hover-icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-product-hover-icons a i {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  width: 2.5rem;
+  background-color: #fefefe;
+  text-align: center;
+  color: #0a0a0a;
+}
+
+.card-product-hover-icons a i:hover {
+  background-color: #8a8a8a;
+  color: #fefefe;
+  cursor: pointer;
+}
+
+.card-product-hover-icons a {
+  margin: 2px;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 0.35s ease;
+}
+
+.card-product-hover:hover a,
+.card-product-hover.hover a {
+  transition: all 0.35s ease;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card-product-hover:hover a:nth-child(2),
+.card-product-hover.hover a:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.card-product-hover:hover a:nth-child(3),
+.card-product-hover.hover a:nth-child(3) {
+  transition-delay: 0.2s;
+}
